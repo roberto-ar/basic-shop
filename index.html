@@ -3,24 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Basic Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-        .product img {
-            max-width: 100px;
-            display: block;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -44,12 +28,14 @@
             <label for="image">Image URL:</label>
             <input type="url" id="image" name="image" required><br>
             
-            <button type="submit">Add Product</button>
+            <button type="submit" id="add-product">Add Product</button>
         </form>
     </section>
+    <div id="alert" class="hidden"></div>
     
     <footer>
-        <p>&copy; 2025 Basic Store</p>
+        <p>Basic Store</p>
     </footer>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
